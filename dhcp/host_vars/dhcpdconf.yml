@@ -1,0 +1,32 @@
+#
+# DHCP Server Configuration file.
+#   see /usr/share/doc/dhcp*/dhcpd.conf.example
+#   see dhcpd.conf(5) man page
+#
+
+subnet 10.10.10.0 netmask 255.255.255.0 {
+        option subnet-mask 255.255.255.0;
+        option routers 10.10.10.254;
+        range 10.10.10.110 10.10.10.200;
+
+option space NEW_OP;
+option NEW_OP.config-file-name code 1 = text;
+option NEW_OP.image-file-name code 0 = text;
+option NEW_OP.image-file-type code 2 = text;
+option NEW_OP.transfer-mode code 3 = text;
+option NEW_OP.alt-image-file-name code 4= text;
+option NEW_OP.http-port code 5= text;
+option NEW_OP-encapsulation code 43 = encapsulate NEW_OP;
+
+option option-150 code 150={ip-address};
+option option-150 10.10.10.101;
+
+host {{ jn-switch35 }} {
+     hardware ethernet {{ ac:4b:c8:29:5d:02 }};
+     fixed-address {{ 10.100.x.x }};
+     option tftp-server-name "10.100.31.71";
+     option host-name "{{ jn-switch35 }}";
+     option NEW_OP.image-file-name {{"/dist/images/jinstall-ex-4200-13.2R1.1-domestic-signed.tgz"}};
+     option NEW_OP.transfer-mode "ftp";
+     option NEW_OP.config-file-name "{{/dist/config/jn-switch35.config}}";
+}

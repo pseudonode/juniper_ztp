@@ -1,0 +1,8 @@
+---
+
+hostname: ztp-leaf2
+system_mac: 20:d8:0b:3c:f6:f9
+ip_address: 10.10.10.114
+image: "/dist/images/jinstall-ex-4200-13.2R1.1-domestic-signed.tgz" # This is just an example. Change with real one
+transfer_mode: ftp
+config_file: "/dist/config/ztp-leaf2.config" # This is just an example. Change with real one

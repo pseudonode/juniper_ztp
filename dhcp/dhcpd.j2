@@ -19,5 +19,17 @@ subnet 10.10.10.0 netmask 255.255.255.0 {
         option subnet-mask 255.255.255.0;
         option routers 10.10.10.254;
         range 10.10.10.110 10.10.10.200;
+}
 
-
+group {
+{% for (key,value) in switches.iteritems() %}
+host {{ value.hostname }} {
+     hardware ethernet {{ value.mac }};
+     fixed-address {{ value.ip }};
+     option host-name {{ value.hostname }};
+     option NEW_OP.image-file-name "{{ value.code }}";
+     option NEW_OP.transfer-mode "ftp";
+     option NEW_OP.config-file-name "{{ value.config }}";
+}
+{% endfor %}
+}

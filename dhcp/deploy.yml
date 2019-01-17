@@ -1,0 +1,21 @@
+---
+
+- name: Deploy dhcpd.conf to Automation Server 1
+  hosts: autosrv1
+  #connection: local
+  gather_facts: no
+
+  tasks:
+
+  - name: Copy file to Automation Server 1
+    copy:
+      src: ./dhcpd/dhcpd.conf
+      dest: /etc/dhcp/dhcpd.conf
+      owner: root
+      group: root
+      mode: u+rw,g-wx,o-rwx
+
+  - name: Restart dhcpd
+    service:
+      name: dhcpd
+      state: restarted

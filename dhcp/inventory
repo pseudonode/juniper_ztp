@@ -1,9 +1,12 @@
 [dhcpd]
 localhost
 
+[autosrv]
+autosrv1
+
 [spine]
 ztp-spine1
-zep-spine2
+ztp-spine2
 
 [leaf]
 ztp-leaf1

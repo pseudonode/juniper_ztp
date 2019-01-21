@@ -14,8 +14,10 @@
       owner: root
       group: root
       mode: u+rw,g-wx,o-rwx
+    register: copy
 
   - name: Restart dhcpd
     service:
       name: dhcpd
       state: restarted
+    when: copy.changed

@@ -1,13 +1,17 @@
-[dhcpd]
-localhost
-
-[autosrv]
-autosrv1
-
-[spine]
-ztp-spine1
-ztp-spine2
-
-[leaf]
-ztp-leaf1
-ztp-leaf2
+all:
+    children:
+        dhcpd:
+            hosts:
+                localhost
+        autosrv:
+            hosts:
+                autosrv1
+        spine:
+            hosts:
+                ztp-spine1
+                ztp-spine2
+        leaf:
+            hosts:
+                ztp-leaf1
+                ztp-leaf2
+        

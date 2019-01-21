@@ -3,33 +3,33 @@ switches:
     hostname: ztp-leaf-1
     mac: 20:d8:0b:3d:14:f9
     ip: 10.10.10.110
-    code: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
+    code: "{{ code.qfx_5120 }}"
     config: /pub/config/ztp-leaf-1.conf
 
   ztp-leaf-2:
     hostname: ztp-leaf-2
     mac: 20:d8:0b:3c:f6:f9
     ip: 10.10.10.111
-    code: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
+    code: "{{ code.qfx_5120 }}"
     config: /pub/config/ztp-leaf-2.conf
 
   ztp-spine-1:
     hostname: ztp-spine-1
     mac: e4:fc:82:6d:a0:3d
     ip: 10.10.10.112
-    code: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
+    code: "{{ code.qfx_5210 }}"
     config: /pub/config/ztp-spine-1.conf
 
   ztp-spine-2:
     hostname: ztp-spine-2
     mac: e4:fc:82:6d:a5:29
     ip: 10.10.10.113
-    code: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
+    code: "{{ code.qfx_5210 }}"
     config: /pub/config/ztp-spine-2.conf
 
   ztp-spine-3:
     hostname: ztp-spine-3
     mac: e4:fc:82:6d:a5:29
     ip: 10.10.10.113
-    code: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
+    code: "{{ code.qfx_5210 }}"
     config: /pub/config/ztp-spine-2.conf

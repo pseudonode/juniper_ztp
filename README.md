@@ -16,4 +16,4 @@ The lab is comprised of two major building blocks
   * FTP Server for target code and configuration file transfer to newly connected devices
 
 * Automation Server 2
-  ** Ansible Core for DHCPD.conf file generation and push to Automation Server 1 where DHCP services are running
+  * Ansible Core for DHCPD.conf file generation and push to Automation Server 1 where DHCP services are running

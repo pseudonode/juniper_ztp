@@ -1,3 +1,3 @@
 # juniper_ztp
 
-![Alt text](images/ztp_juniper.png?raw=true "Title")
+![Alt text](images/ztp_staging.png?raw=true "Title")

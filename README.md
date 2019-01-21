@@ -18,7 +18,7 @@ This infrastructure has the purpose of service as a ZTP staging environment to q
 * Automation Server 2
   * Ansible Core for DHCPD.conf file generation and push to Automation Server 1 where DHCP services are running
 
-** Automation Server 1 **
+**Automation Server 1**
 * DHCP
   * ISC2 DHCP server is running and will allow for the following options to be defined:
     * Option 43 sub-option 0: Specifies image file name
@@ -28,7 +28,7 @@ This infrastructure has the purpose of service as a ZTP staging environment to q
 
 * FTP
 
-** Automation Server 2 **
+**Automation Server 2**
 
 * dhcpd.conf generation
 

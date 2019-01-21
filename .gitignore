@@ -1,0 +1,5 @@
+#Ignore The following files
+
+*.swp
+*.retry
+

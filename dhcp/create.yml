@@ -11,6 +11,6 @@
     file: path=./dhcpd/ state=directory
  
   - name: Create dhcpd.conf file
-    template: src=dhcpd.j2 dest=./dhcpd/dhcpd.conf
+    template: src=templates/dhcpd.j2 dest=./dhcpd/dhcpd.conf
 
   #- debug: var=vars

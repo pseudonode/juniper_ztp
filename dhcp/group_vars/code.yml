@@ -2,8 +2,8 @@
 code:
     qfx_5210: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
     qfx_5120: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
-    ex_4200: tbd
-    ex_4600: tbd
+    ex_4200: /pub/code/14_1_4200/jinstall-ex-4200-14.1X53-D48.1-domestic-signed.tgz
+    ex_4600: /pub/code/18_3_4600/jinstall-host-ex-4600-18.3R1.9-signed.tgz
     ex_3400: tbd
     srx_4200: tbd
     srx_4600: tbd

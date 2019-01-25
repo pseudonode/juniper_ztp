@@ -4,6 +4,7 @@ index = 0
 with open('lab_csv.csv') as csv:
     csvcontent = csv.read()
     csvsplit = csvcontent.split('\n')
+    csvsplit = csvsplit[:-1]
     for switch in csvsplit:
         switch = switch.split(',')
         maclist.append(switch[2].lower())

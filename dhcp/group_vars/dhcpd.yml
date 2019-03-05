@@ -1,35 +1,7 @@
 switches:
-  ztp-leaf-1:
-    hostname: ztp-leaf-1
-    mac: 20:d8:0b:3d:14:f9
-    ip: 10.10.10.110
-    code: "{{ code.qfx_5120 }}"
-    config: /pub/config/ztp-leaf-1.conf
-
-  ztp-leaf-2:
-    hostname: ztp-leaf-2
-    mac: 20:d8:0b:3c:f6:f9
-    ip: 10.10.10.111
-    code: "{{ code.qfx_5120 }}"
-    config: /pub/config/ztp-leaf-2.conf
-
-  ztp-spine-1:
-    hostname: ztp-spine-1
-    mac: e4:fc:82:6d:a0:3d
-    ip: 10.10.10.112
-    code: "{{ code.qfx_5210 }}"
-    config: /pub/config/ztp-spine-1.conf
-
-  ztp-spine-2:
-    hostname: ztp-spine-2
-    mac: e4:fc:82:6d:a5:29
-    ip: 10.10.10.113
-    code: "{{ code.qfx_5210 }}"
-    config: /pub/config/ztp-spine-2.conf
-
-  ztp-spine-3:
-    hostname: ztp-spine-3
-    mac: e4:fc:82:6d:a5:29
-    ip: 10.10.10.113
-    code: "{{ code.qfx_5210 }}"
-    config: /pub/config/ztp-spine-2.conf
+  icsl2-d1-aob-07:
+    hostname: icsl2-d1-aob-01
+    mac: b8:c2:53:83:30:51
+    ip: 10.245.150.11
+    code: "{{ code.ex_3400 }}"
+    config: /pub/config/icsl2-d1-aob-07.conf

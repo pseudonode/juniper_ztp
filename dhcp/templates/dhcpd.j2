@@ -13,12 +13,12 @@ option NEW_OP.http-port code 5= text;
 option NEW_OP-encapsulation code 43 = encapsulate NEW_OP;
 
 option option-150 code 150={ip-address};
-option option-150 10.10.10.101;
+option option-150 10.245.156.1;
 
-subnet 10.10.10.0 netmask 255.255.255.0 {
+subnet 10.245.156.0 netmask 255.255.255.0 {
         option subnet-mask 255.255.255.0;
-        option routers 10.10.10.254;
-        range 10.10.10.110 10.10.10.200;
+        option routers 10.245.156.1;
+        range 10.245.156.10 10.245.156.200;
 }
 
 group {

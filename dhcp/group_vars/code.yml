@@ -1,11 +1,7 @@
 ---
 code:
-    qfx_5210: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
-    qfx_5120: /pub/code/18_4_5210_5120/jinstall-host-qfx-5e-flex-x86-64-18.4R1.8-secure-signed.tgz
-    ex_4200: /pub/code/14_1_4200/jinstall-ex-4200-14.1X53-D48.1-domestic-signed.tgz
-    ex_4600: /pub/code/18_3_4600/jinstall-host-ex-4600-18.3R1.9-signed.tgz
-    ex_3400: tbd
-    srx_4200: tbd
-    srx_4600: tbd
-    mx_204: tbd
+    qfx_5210: /pub/code/18_3_5210/jinstall-host-qfx-5e-x86-64-18.3R1.9-secure-signed.tgz
+    qfx_5120: /pub/code/18_3_5120/jinstall-host-qfx-5e-x86-64-18.3R1-S2.1-secure-signed.tgz
+    ex_4600: /pub/code/14_1_4600/jinstall-ex-4600-14.1X53-D47.6-domestic-signed.tgz
+    ex_3400: /pub/code/15_1_3400/junos-arm-32-15.1X53-D59.4.tgz
 

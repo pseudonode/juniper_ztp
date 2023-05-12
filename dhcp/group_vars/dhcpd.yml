@@ -5,3 +5,9 @@ switches:
     ip: 10.245.150.11
     code: "{{ code.ex_3400 }}"
     config: /pub/config/icsl2-d1-aob-07.conf
+  icsl2-d1-aob-08:
+    hostname: icsl2-d1-aob-08
+    mac: b8:c2:53:83:30:52
+    ip: 10.245.150.11
+    code: "{{ code.ex_3400 }}"
+    config: /pub/config/icsl2-d1-aob-08.conf
